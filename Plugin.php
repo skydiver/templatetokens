@@ -98,7 +98,7 @@ class Plugin
             'token_config' => [
                 'label'       => 'koderhut.templatetokens::lang.plugin.config.label',
                 'description' => 'koderhut.templatetokens::lang.plugin.config.description',
-                'category'    => 'KoderHut',
+                'category'    => SettingsManager::CATEGORY_CMS,
                 'icon'        => 'icon-quote-left',
                 'url'         => Backend::url('koderhut/templatetokens/config'),
                 'order'       => 500,
