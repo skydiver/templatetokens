@@ -103,8 +103,20 @@ class Plugin
                 'icon'        => 'icon-quote-left',
                 'url'         => Backend::url('koderhut/templatetokens/config'),
                 'order'       => 500,
-                'keywords'    => ''
+                'keywords'    => '',
+                'permissions' => ['koderhut.templatetokens.manage_tokens'],
             ]
         ];
     }
+
+    public function registerPermissions()
+    {
+      return [
+          'koderhut.templatetokens.manage_tokens' => [
+              'label' => 'koderhut.templatetokens::lang.plugin.config.description',
+              'tab'   => 'koderhut.templatetokens::lang.plugin.config.label'
+          ],
+      ];
+    }
+
 }
