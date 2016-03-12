@@ -34,14 +34,10 @@ class CreateTokensTable
         Schema::create(Token::TEMPLATE_VARS_TABLE_NAME, function($table)
         {
             $table->increments('entity_id');
-            $table->string('token_name', 100)
-                ->nullable(false);
-            $table->string('token_value')
-                ->nullaable(false);
-            $table->string('token_scope')
-                ->nullaable(false);
+            $table->string('token_name', 100)->nullable(false);
+            $table->text  ('token_value'    )->nullable(false);
+            $table->string('token_scope'    )->nullable(false);
             $table->timestamps();
-
             $table->unique(['token_name', 'token_scope',], 'UNQ_KH_TK_VAR_NAME_VAR_SCOPE');
         });
     }
