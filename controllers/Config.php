@@ -43,6 +43,8 @@ class Config
         'Backend.Behaviors.ListController'
     ];
 
+    public $requiredPermissions = ['koderhut.templatetokens.manage_tokens'];
+
     /**
      * {@inheritdoc}
      *
