@@ -22,6 +22,7 @@ use KoderHut\TemplateTokens\Classes\TokensManager,
     KoderHut\TemplateTokens\Classes\TokensService,
     KoderHut\TemplateTokens\Classes\Support\Facades\Tokens as TokensFacade;
 
+use System\Classes\SettingsManager;
 
 /**
  * Webvars Plugin Information And Install Class
